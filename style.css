@@ -94,11 +94,18 @@ span {
     color: #969696;
   }
 
-.inputsex {
+  .inputsex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 21px;
+  }
+
+.radio-button {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 21px;
+  gap: 8px;
 
   position: relative;
 }
@@ -117,7 +124,7 @@ span {
   left: 7px;
 }
 
-.inputsex::before {
+.radio-button::before {
 content: " ";
 width: 20px;
 height: 20px;
@@ -126,9 +133,16 @@ background: #FFFFFF;
 border: 1px solid #E4E4E4;
 }
 
-.inputsex:hover::before {
-  background: #007BFF;
+.radio-button:hover::before {
+ background: #007BFF;
 }
+
+.radio-button:has(:checked) {
+background-color: #007BFF;
+}
+
+
+ 
 
 
 .input-name_option {
