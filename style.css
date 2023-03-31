@@ -34,6 +34,7 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 7px;
+  position: relative;
 }
 
 .name-1 {
@@ -71,35 +72,35 @@ h2 {
 }
 
 .email-text {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 18px;
-  
-    letter-spacing: -0.1px;
-  
-    color: #969696;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+
+  letter-spacing: -0.1px;
+
+  color: #969696;
 }
 
 span {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 18px;
-  
-    letter-spacing: -0.1px;
-  
-    color: #969696;
-  }
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
 
-  .inputsex {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 21px;
-  }
+  letter-spacing: -0.1px;
+
+  color: #969696;
+}
+
+.inputsex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 21px;
+}
 
 .radio-button {
   display: flex;
@@ -109,7 +110,6 @@ span {
 
   position: relative;
 }
- 
 
 .inputsex-batton {
   opacity: 0;
@@ -125,27 +125,34 @@ span {
 }
 
 .radio-button::before {
-content: " ";
-width: 20px;
-height: 20px;
-border-radius: 50%;
-background: #FFFFFF;
-border: 1px solid #E4E4E4;
+  content: " ";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid #e4e4e4;
 }
 
 .radio-button:hover::before {
- background: #007BFF;
+  background: #007bff;
 }
 
-.radio-button:has(:checked) {
-background-color: #007BFF;
+:has(input:checked)::before {
+  background: #007bff;
 }
 
+.select-icon {
+  position: absolute;
+  bottom: 15px;
+  right: 35px;
+}
+.name-2_select {
+  width: 245px;
+  height: 38px;
 
- 
+  border: 1px solid #e4e4e4;
+  border-radius: 6px;
 
-
-.input-name_option {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -155,8 +162,15 @@ background-color: #007BFF;
   letter-spacing: -0.2px;
 
   color: #545454;
+
+  appearance: none;
 }
-  
+
+.svg {
+  position: absolute;
+  bottom: 15px;
+  right: 35px;
+}
 
 .button {
   width: 535px;
@@ -177,47 +191,41 @@ background-color: #007BFF;
 }
 
 p {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 13px;
-line-height: 18px;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
 
-text-align: center;
-letter-spacing: -0.1px;
+  text-align: center;
+  letter-spacing: -0.1px;
 
-color: #969696;
+  color: #969696;
 
-text-align: center;
+  text-align: center;
 }
 
 hr {
-    width: 535px;
-    border: 1px solid #E4E4E4;
-   
+  width: 535px;
+  border: 1px solid #e4e4e4;
 }
 
+.form_footer span:last-of-type {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
 
+  letter-spacing: -0.1px;
 
-  .form_footer span:last-of-type {
-font-family: 'Roboto', sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 15px;
-line-height: 22px;
-
-
-letter-spacing: -0.1px;
-
-color: #007BFF;
-  }
-
-
+  color: #007bff;
+}
 
 .form_footer {
-     display: flex;
-    align-items: center;
-    justify-content: center; 
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
