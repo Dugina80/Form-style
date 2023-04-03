@@ -211,7 +211,7 @@ hr {
   border: 1px solid #e4e4e4;
 }
 
-.form_footer span:last-of-type {
+.form_footer a:last-of-type {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
