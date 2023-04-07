@@ -12,7 +12,24 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  
 }
+
+  @media screen and (max-width: 980px) {
+    .form {background-color: rgb(208, 208, 216);
+   
+    
+    
+  }
+    
+@media screen and (max-width: 470px) {
+  .form{ background-color:rgb(240, 240, 180);
+     padding: 0px 20px;}
+    }
+
+  }
+ 
+
 
 h2 {
   font-family: "Roboto", sans-serif;
@@ -27,8 +44,17 @@ h2 {
 .grid-conteiner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 12px;
+  
+  grid-column-gap: 12px;
+  grid-row-gap: 20px;
 }
+ 
+@media screen and (max-width: 470px) {
+  .grid-conteiner {
+    grid-template-columns: 100%;
+  }
+}
+
 
 .input-name {
   display: flex;
@@ -70,6 +96,14 @@ h2 {
   border: 1px solid #e4e4e4;
   border-radius: 6px;
 }
+
+@media screen and (max-width: 470px) {
+  .input-email {
+    width: 100% ;
+  }
+  
+}
+
 
 .email-text {
   font-family: "Roboto", sans-serif;
@@ -141,11 +175,7 @@ span {
   background: #007bff;
 }
 
-.select-icon {
-  position: absolute;
-  bottom: 15px;
-  right: 35px;
-}
+
 .name-2_select {
   width: 245px;
   height: 38px;
@@ -164,13 +194,24 @@ span {
   color: #545454;
 
   appearance: none;
+  position: relative;
 }
 
-.svg {
+.select-icon {
   position: absolute;
   bottom: 15px;
   right: 35px;
+
+  
 }
+
+
+@media screen and (max-width: 470px){
+  .select-icon  {
+  
+   
+  }
+  }
 
 .button {
   width: 535px;
@@ -188,6 +229,12 @@ span {
   letter-spacing: -0.1px;
 
   color: #ffffff;
+}
+
+@media screen and (max-width: 470px) {
+  .button {
+    width: 100%;
+  }
 }
 
 p {
